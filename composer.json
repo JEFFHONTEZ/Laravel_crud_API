@@ -12,7 +12,8 @@
         "php": "^8.2",
         "laravel/framework": "^12.0",
         "laravel/sanctum": "^4.0",
-        "laravel/tinker": "^2.10.1"
+        "laravel/tinker": "^2.10.1",
+        "mongodb/laravel-mongodb": "^5.5"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
@@ -86,6 +87,9 @@
         "allow-plugins": {
             "pestphp/pest-plugin": true,
             "php-http/discovery": true
+        },
+        "platform": {
+            "ext-mongodb": "2.1.7"
         }
     },
     "minimum-stability": "stable",
