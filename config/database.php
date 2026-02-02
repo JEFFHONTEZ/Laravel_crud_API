@@ -44,10 +44,12 @@ return [
         ],
 
         'mysql' => [
-            'driver' => 'mysql',
+            // 'driver' => 'mysql',
+            'driver' => 'mongodb',
             'url' => env('DB_URL'),
             'host' => env('DB_HOST', '127.0.0.1'),
-            'port' => env('DB_PORT', '3306'),
+            // 'port' => env('DB_PORT', '3306'),
+            'port' => env('DB_PORT', '27017'),
             'database' => env('DB_DATABASE', 'laravel'),
             'username' => env('DB_USERNAME', 'root'),
             'password' => env('DB_PASSWORD', ''),
@@ -113,6 +115,11 @@ return [
             // 'trust_server_certificate' => env('DB_TRUST_SERVER_CERTIFICATE', 'false'),
         ],
 
+        'mongodb' => [
+            'driver' => 'mongodb',
+            'dsn' => env('MONGODB_URI'),
+            'database' => env('MONGODB_DATABASE'),
+        ],
     ],
 
     /*
